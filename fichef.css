@@ -1,0 +1,174 @@
+/*flight*/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+*{
+    font-family: 'Alumni Sans Inline One', sans-serif;
+    color: darkgoldenrod;
+    font-size: 1.10em;
+    font-weight: 300;
+}
+
+header {
+    background-color: darkgrey;
+    /* Arrière-plan de l'en-tête */
+    color: darkgoldenrod;
+    /* Couleur du texte dans l'en-tête */
+    padding: 15px;
+    /* Espace autour du contenu de l'en-tête */
+    border-radius: 10px;
+}
+
+/* Style de base pour la barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    color: darkgoldenrod;
+    border-radius: 10px;
+    background-color: darkgrey;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: darkgrey;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkgoldenrod;
+    background-color: darkgrey;
+}
+
+/* Style au survol des liens */
+nav a:hover {
+    text-decoration: underline;
+    color: darkgoldenrod;
+    background-color: darkgrey;
+}
+
+/* Style pour la barre de recherche */
+.search-box {
+    display: flex;
+    color: darkgoldenrod;
+    background-color: darkgrey;
+}
+
+.search-box input {
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    color: whitesmoke;
+
+}
+
+.search-box button {
+    background-color: darkgray;
+    color: darkgoldenrod;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Style au survol du bouton de recherche */
+.search-box button:hover {
+    background-color: royalblue;
+}
+
+/* Ajout de styles pour rendre la barre de navigation responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin-right: 0;
+
+    }
+}
+
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+
+
+
+.titre {
+    text-align: center; /* Centrer le texte */
+    padding: 30px;
+    justify-content: center;
+}
+
+body {
+    background-image: url('pict/planisf.png'); 
+    background-size: cover; /* Ajuste l'image pour remplir toute la zone */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image en arrière-plan */
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+h4{
+    text-decoration: underline;
+}
+
+.ex img {
+    max-width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .ex img {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ex img {
+        padding: 10px;
+    }
+}
+
+.download-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 200;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
