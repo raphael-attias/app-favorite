@@ -4,7 +4,7 @@
 
 
 header {
-    background-color: dimgray;
+    background-color: black;
     /* Arrière-plan de l'en-tête */
     color: whitesmoke;
     /* Couleur du texte dans l'en-tête */
@@ -18,10 +18,9 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2px;
     color: whitesmoke;
     border-radius: 10px;
-    background-color: dimgray;
+    background-color: black;
 }
 
 nav ul {
@@ -29,7 +28,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: dimgray;
+    background-color: black;
 }
 
 nav li {
@@ -53,7 +52,7 @@ nav a {
     color: whitesmoke;
     font-size: medium;
     font-weight: bold;
-    background-color: dimgray;
+    background-color: black;
     color: whitesmoke;
 }
 
@@ -61,27 +60,27 @@ nav a {
 nav a:hover {
     text-decoration: underline;
     color: whitesmoke;
-    background-color: dimgray;
+    background-color: black;
 }
 
 /* Style pour la barre de recherche */
 .search-box {
     display: flex;
     color: whitesmoke;
-    background-color: dimgray;
+    background-color: black;
 }
 
 .search-box input {
     padding: 5px;
     border: 1px solid whitesmoke;
     border-radius: 4px;
-    color: whitesmoke;
+    color: dimgray;
 
 }
 
 .search-box button {
-    background-color: dimgray;
-    color: whitesmoke;
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 4px;
     padding: 5px 10px;
@@ -159,7 +158,7 @@ h1 {
     background-color: darkgoldenrod;
 }
 .app3{
-    background-color: firebrick;
+    background-color: crimson;
 }
 
 /* Dernière colonne (app3) n'aura pas de marges en bas */
@@ -193,12 +192,57 @@ section {
 h3{
     text-decoration: underline;
 }
+p{
+    line-height: 1.6em;
 
-footer{
-    background-color: dimgray;
+}
+footer {
+    background-color: black;
     color: whitesmoke;
-    padding: 15px;
     border-radius: 10px;
     text-align: center;
+    padding: 3px;
 }
 
+h5, h6 {
+    font-weight: bold;
+    margin: 2px;
+    font-size: 14px; 
+}
+
+footer a {
+    color: whitesmoke;
+    font-size: 14px; 
+
+.f0 {
+    margin-bottom: 2px;
+}
+
+.f1, .f2, .f3 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 3px;
+}
+
+.f1 > a, .f2 > a, .f3 > a {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px; 
+}
+
+.f4 {
+    margin-top: 5px;
+}
+
+.bas {
+    margin: 5px;
+    font-size: 14px; 
+}
+
+@media (max-width: 768px) {
+    .f1, .f2, .f3 {
+        display: block;
+        margin: 10px 0;
+    }
+}
+}

@@ -5,9 +5,9 @@
 }
 
 header {
-    background-color: dimgray;
+    background-color: whitesmoke;
     /* Arrière-plan de l'en-tête */
-    color: whitesmoke;
+    color: firebrick;
     /* Couleur du texte dans l'en-tête */
     padding: 15px;
     /* Espace autour du contenu de l'en-tête */
@@ -20,9 +20,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 2px;
-    color: whitesmoke;
+    color: firebrick;
     border-radius: 10px;
-    background-color: dimgray;
+    background-color: whitesmoke;
 }
 
 nav ul {
@@ -30,7 +30,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: dimgray;
+    background-color: whitesmoke;
 }
 
 nav li {
@@ -39,38 +39,37 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: whitesmoke;
     font-size: medium;
     font-weight: bold;
-    background-color: dimgray;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: firebrick;
 }
 
 /* Style au survol des liens */
 nav a:hover {
     text-decoration: underline;
     color: whitesmoke;
-    background-color: dimgray;
+    background-color: firebrick;
 }
 
 /* Style pour la barre de recherche */
 .search-box {
     display: flex;
-    color: whitesmoke;
-    background-color: dimgray;
+    color: firebrick;
+    background-color: whitesmoke;
 }
 
 .search-box input {
     padding: 5px;
-    border: 1px solid whitesmoke;
+    border: 1px solid firebrick;
     border-radius: 4px;
     color: whitesmoke;
 
 }
 
 .search-box button {
-    background-color: dimgray;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: firebrick;
     border: none;
     border-radius: 4px;
     padding: 5px 10px;
@@ -80,7 +79,7 @@ nav a:hover {
 
 /* Style au survol du bouton de recherche */
 .search-box button:hover {
-    background-color: royalblue;
+    background-color: darkgoldenrod;
 }
 
 /* Ajout de styles pour rendre la barre de navigation responsive */
@@ -111,7 +110,7 @@ main {
 }
 
 body{
-    background-color: firebrick;
+    background-color: crimson;
     font-weight: bold;
     font-size: large;
 }
@@ -158,4 +157,55 @@ h4{
 
 .download-button:hover {
     background-color: #e64d2f;
+}
+
+footer {
+    background-color: whitesmoke;
+    color: firebrick;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px;
+}
+
+h5, h6 {
+    font-weight: bold;
+    margin: 2px;
+    font-size: 14px; 
+}
+
+footer a {
+    color: firebrick;
+    font-size: 14px; 
+
+.f0 {
+    margin-bottom: 2px;
+}
+
+.f1, .f2, .f3 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 3px;
+}
+
+.f1 > a, .f2 > a, .f3 > a {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px; 
+}
+
+.f4 {
+    margin-top: 5px;
+}
+
+.bas {
+    margin: 5px;
+    font-size: 14px; 
+}
+
+@media (max-width: 768px) {
+    .f1, .f2, .f3 {
+        display: block;
+        margin: 10px 0;
+    }
+}
 }
